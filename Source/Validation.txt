@@ -1,0 +1,38 @@
+PASS XInput L3 + moving + ordinary grounded War: exactly 2x
+PASS L3 released: baseline
+PASS stationary: baseline
+PASS disabled: baseline
+PASS other movement state (attack/dodge/climb): baseline
+PASS non-player character: baseline
+PASS stale state: baseline
+PASS airborne: baseline
+PASS sliding: baseline
+PASS swimming: baseline
+PASS collision disabled: baseline
+PASS move control disabled/cinematic: baseline
+PASS mounted: baseline
+PASS Chaos form: baseline
+PASS combat/strafe/context guard 0x5f9
+PASS combat/strafe/context guard 0x5fd
+PASS combat/strafe/context guard 0x600
+PASS combat/strafe/context guard 0x601
+PASS combat/strafe/context guard 0x603
+PASS combat/strafe/context guard 0x608
+PASS combat/strafe/context guard 0x60a
+PASS combat/strafe/context guard 0x60c
+PASS combat/strafe/context guard 0x60e
+PASS combat/strafe/context guard 0x610
+PASS combat/strafe/context guard 0x612
+PASS combat/strafe/context guard 0x618
+PASS combat/strafe/context guard 0x61a
+PASS missing character pointer
+PASS missing game singleton
+PASS missing character proxy
+PASS heartbeat expiry: stop scaling and latch OFF
+PASS heartbeat counter wrap: fresh heartbeat still works
+All branches preserve GPRs, EFLAGS, MXCSR, and XMM0-7; original LEA ECX and PUSH ECX are replayed with the correct stack argument.
+PASS: installed hook, verified live jump, disabled, and verified all five original bytes restored.
+XInput pad 0: L3 released   Stick MOVING
+Grounded 1   State: ordinary movement
+War position: -40237.8, -40822.8, -1505.4
+Live 2x build: enabled=1; multiplier read back from running game as 2.0. Shared-path hook executes. Prior 1.5x build: user confirmed working; sampled position-speed ratio 1.50057. Full regression and a separate 2x distance measurement are incomplete.
